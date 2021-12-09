@@ -1,4 +1,4 @@
-# FreightHub Frontend Coding Challenge - (Updated)
+# FreightHub FullStack Coding Challenge - (Solution)
 
 Welcome to the FreightHub frontend coding challenge! Please read the following instructions carefully.
 
@@ -63,4 +63,4 @@ yarn server or npm run server
 Check [json-server](https://github.com/typicode/json-server) for more information.
 
 # Time limit
-5 days
+7 days
