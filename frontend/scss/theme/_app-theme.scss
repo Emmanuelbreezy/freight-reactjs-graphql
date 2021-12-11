@@ -1,0 +1,29 @@
+@use '../vendor/boostrap' as *;
+
+
+:root{
+    --navbar-bg-color: #fff;
+    --body-bg-color: #fafafa;
+    
+    --primary-color: #fcd34d;
+    --secondary-color: #333;//#a5057d;
+    --accent-color:#fff;
+    --inactive-anchor-color:#d69cc8;
+    --text-muted: #949292;
+    --text-subhead: #333;
+}
+
+body{
+   overflow-x: hidden;
+   padding: 0;
+   margin: 0;
+   background-color: var(--body-bg-color);
+}
+
+.__center__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+

@@ -1,0 +1,16 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+.main--layout{
+    height: auto;
+
+    .container{
+        width: 100%;
+        
+        @include media-breakpoint-up(md){
+            width: 80%;
+        }
+    }
+
+}

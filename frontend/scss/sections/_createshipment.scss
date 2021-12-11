@@ -1,0 +1,98 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+.app-create{
+
+    .cd-section{
+        padding-top: 2.0rem;
+        margin-bottom: 4rem;
+    }
+
+    .app-create-form{
+           margin-bottom: 4rem;
+
+
+           .formClass{
+
+               label{
+                   font-family: 'Poppins', sans-serif;
+                   color: #000;
+               }
+    
+               input{
+                   padding-top: 0.6rem;
+                   padding-bottom: 0.6rem;
+               }
+    
+               button{
+                   font-weight:510;
+               }
+
+              .form-mutiple-field{
+
+                    button{
+                        font-weight:490;
+                    }
+
+                    .multi-inputs{
+                            .input-remove-btn{
+                                position: absolute;
+                                top: -20%;
+                                right: -1%;
+                                width: 20px;
+                                height: 20px;
+
+                                svg{
+                                    width: 21px;
+                                    height: auto;
+                                    cursor: pointer;
+                                }
+                            }
+                    }
+               }
+               .mode-form{
+
+                    .row{
+                        .col_mode{
+                            margin-bottom: 0.8rem;
+                            .card--active{
+                                border-width: 2px;
+                                border-color: $primary;
+                            }
+                            
+                            .card{
+                                height: auto;
+                                text-decoration: none;
+                                cursor: pointer;
+        
+                                .card-body{
+                                
+        
+                                    .img-container{
+                                        padding: 2rem;
+                                        height: 120px;
+                                        text-align: center;
+                                        img{
+                                        
+                                        }
+                                    }
+        
+                                    .card-title{
+                                        padding-left: 0.88rem;
+                                    }
+                                }
+        
+                                &:hover{
+                                    border-width: 1px;
+                                    border-color: $primary;
+                                }
+                            }
+                    }
+                }
+               }
+           }
+
+      
+    }
+}

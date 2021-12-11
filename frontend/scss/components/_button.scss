@@ -1,0 +1,14 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+
+._actionBtn{
+    border-radius: 25px;
+    font-weight: 500;
+    border-width: 2px;
+
+    &:hover{
+        color: $white;
+    }
+}

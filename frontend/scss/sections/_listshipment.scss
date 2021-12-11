@@ -1,0 +1,118 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+
+.app-allshipment{
+    padding-top: 2rem;
+
+    .allshipment-searchbar-wrapper{
+         display: flex;
+         align-items: center;
+
+         input{
+             padding-top: 0.7rem;
+             padding-bottom: 0.7rem;
+         }
+         .new-shipment-btn{
+             margin-left: 2rem;
+             width: 180px;
+             padding-top: 0.7rem;
+             padding-bottom: 0.7rem;
+             font-family: 'Poppins', sans-serif;
+
+         }
+
+         .export-btn{
+            margin-left: 0.5rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            width: 50px;
+             
+            svg{
+                width: 20px;
+                height: auto;
+                fill: black;
+
+                
+            }
+
+            &:hover{
+
+                svg{
+                    fill: white;
+                }
+            }
+         }
+    }
+
+    .allshipment-table{
+        padding-top: 3rem;
+        table{
+            thead{
+                padding-top: 0.5rem !important;
+                padding-bottom: 0.9rem !important;
+                background-color:rgba($color: $secondary, $alpha: 1.0);
+                border-top-right-radius: 15px !important;
+                border-top-left-radius: 15px !important;
+                
+                color: #fff;
+                tr{
+                    
+                    th{
+                        border-right: 1px solid gray;
+                        text-transform: capitalize !important;
+                    }
+                }
+            }
+            
+            .tbody{
+                margin-top: 2rem !important;
+
+                tr{
+                    background-color: white;
+                    border-bottom:1px solid rgb(243, 243, 243);
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    @extend .shadow-sm;
+
+                    th{
+                        font-weight: 550 !important;
+                    }
+                    td,th{
+                        font-size:0.91rem;
+                        padding-top: 1.5rem;
+                        padding-bottom: 1.5rem;
+                        font-family: 'Poppins', sans-serif;
+                        text-transform: capitalize !important;
+
+                    }
+
+                    td{
+                        
+                        .btn-outline{
+                            padding-top: 0.2rem;
+                            padding-bottom: 0.2rem;
+                            margin: 0 !important;
+                            border:1px solid #c0bfbf;
+                            font-size: 0.8rem;
+                            @extend .shadow-sm;
+
+                            &:hover
+                            {
+                                opacity: 0.4;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+.pointer{
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+
+.display-4{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.display--subhead{
+    color: var(--text-subhead);
+    letter-spacing: 0.1px !important;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.2rem !important;
+}
+
+.display-span{
+    color: var(--text-muted);
+    letter-spacing: 0.1px !important;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.status-active{
+    background-color: #dbeafe;
+    color: #60a5fa;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius:15px !important;
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
+    margin: 0 !important;
+    cursor: text;
+}
+
+.status-completed{
+    background-color: #d1fae5;
+    color: #34d399;
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-radius:15px !important;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: 0 !important;
+    cursor: text;
+
+}
+
+.status-active-color{
+    color: #60a5fa !important;
+}
+
+.display-3{
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+}

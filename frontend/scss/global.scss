@@ -1,0 +1,26 @@
+@use 'vendor/boostrap';
+
+@use 'theme/app-theme';
+ 
+@use 'abstract/mixins';
+
+@use 'base/typography';
+
+@use 'components/button';
+@use 'components/navbar';
+@use 'components/navtab';
+@use 'components/tooltip';
+@use 'components/slash';
+@use 'components/footer';
+
+
+@use 'sections/home';
+@use 'sections/dashboard';
+@use 'sections/createshipment';
+@use 'sections/listshipment';
+@use 'sections/detail';
+@use 'sections/auth';
+
+@use 'layout/mainlayout';
+
+

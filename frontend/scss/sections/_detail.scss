@@ -1,0 +1,56 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+.app-shiphment-detail{
+    margin-bottom: 2rem;
+    .row{
+
+        .top-level{
+            padding-top: 2.5rem;
+            padding-bottom: 1.5rem;
+            display:flex;
+            align-items:baseline;
+        }
+
+        .card {
+            @extend .shadow-sm;
+            .card-body{
+                .cd-section{
+                    padding-top: 1.5rem;
+                    display: block;
+                  
+
+                    p{
+                        letter-spacing: 3px !important;
+                    }
+
+                      @include media-breakpoint-up(md){
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+                .cd-detail{
+                    padding-top: 1rem;
+
+                    &-head{
+                        padding:0.6rem 1rem 0.6rem 1rem;
+                        background-color: var(--primary-color);
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+
+                        p{
+                            margin: 0 !important;
+                        }
+                    }
+
+                    &-listing{
+                        padding-top:2rem;
+
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+.navtop--header{
+    height: 75px;
+    .nav--menus{
+        height: auto;
+        background-color: white;
+
+        .container{
+            width: 100%;
+            padding-top:0.5rem;
+            padding-bottom:0.7rem;
+
+            .navbar--brand--user{
+                display: flex;
+                align-items: center;
+
+
+                .navbar-brand{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    color: rgb(39, 29, 29);
+                    padding-left: 0.7rem;
+
+                    .navbar-p{
+                        color: $primary !important;
+                    }
+                }
+
+                .navbar-user{
+                    font-weight: 500;
+                    color: gray;
+                    font-size: 0.9rem;
+                    font-family: 'Poppins', sans-serif;
+                    text-transform: lowercase;
+
+                }
+            }
+            
+            .navbar-toggler{
+                background-color: black;
+               padding: 0.3rem !important;
+
+                svg{
+                    width:30px;
+                    height:30px;
+                }
+            }
+
+            .navbar-nav{
+
+                .nav-item{
+
+                    .nav-link{
+                        color: #333;
+                        font-size: 0.95555rem;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+                .nav-v-divider{
+                    width: 5px;
+                    height: 50;
+                    margin-left: 0.3rem;
+                    border-left: 1px solid #fffefe;
+                }
+
+
+            }
+
+
+            @include media-breakpoint-up(md){
+                width: 80%;
+
+            }
+        }
+
+        @include media-breakpoint-up(lg){
+        
+        }
+        
+
+    }
+
+}
+
+.show-navborder{
+    border-bottom: 1px solid #ddd;
+}

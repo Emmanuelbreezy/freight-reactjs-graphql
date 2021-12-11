@@ -3,3 +3,4 @@ node_modules
 config
 build
 node_modules
+frontend/app

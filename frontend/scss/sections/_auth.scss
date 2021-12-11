@@ -1,0 +1,24 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+.app-auth{
+    padding-top: 2rem;
+    &-wrapper{
+       .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+       
+
+       .card{
+
+        .card-body{
+
+            padding:3rem;
+        }
+       }
+
+    }
+}

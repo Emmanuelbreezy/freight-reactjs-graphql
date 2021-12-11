@@ -1,0 +1,54 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+.nav--tab_{
+    height: auto;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+   
+    .container{
+        width: 100%;
+        padding-top:0.5rem;
+        
+
+        .nav-pills{
+            padding-left: 0 !important;
+
+            .nav-active{
+                border-bottom: 2px solid black;
+                
+                .nav-link{
+                    color: black !important;
+                    font-weight: 499 !important;
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                
+            }
+            .nav-item{
+                padding-bottom:0.5rem;
+                
+
+                .nav-link{
+                    line-height: 0.7rem;
+                    color: #949292;
+                    letter-spacing: 0.1px !important;
+                    font-size: 0.9rem;
+                    font-family: 'Poppins', sans-serif;
+
+                    &:hover{
+                        background-color: rgb(224, 224, 224);
+                        color: black;
+                    }
+
+                }
+            }
+        }
+
+        @include media-breakpoint-up(md){
+            width: 80%;
+
+        }
+    }
+}

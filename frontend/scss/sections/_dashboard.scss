@@ -1,0 +1,276 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+
+.app--home{
+
+    padding-top: 3rem;
+
+    .row{
+
+        .create-action{
+            background-color: $gray-700;
+            color: #fff;
+            border-radius: 10px;
+
+            svg{
+                fill: #fff;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        .list--cards{
+            margin-bottom: 1.5rem;
+            .row{
+                .col_{
+                    margin-bottom: 0.8rem;
+                    
+                    .card{
+                        border: none;
+                        height: 200px;
+                        text-decoration: none;
+                        @extend .shadow-sm;
+
+                        .card-body{
+                           
+
+                            .img-container{
+                                 padding: 2rem;
+                                 height: 120px;
+                                 text-align: center;
+                                img{
+                                   
+                                }
+                            }
+
+                            .card-title{
+                                padding-left: 0.88rem;
+                            }
+                        }
+
+                        &:hover{
+                            @extend .shadow;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom--section{
+            margin-top: 1.5rem;
+
+            .action--button{
+                text-decoration: none;
+                text-align: center;
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+                padding-left: 0.5rem;
+                padding-right:0.5rem;
+                border-radius: 5px;
+
+
+                svg{
+                    fill: #949292 !important;
+                }
+
+                &:hover{
+                    background-color: #f2f2f2;
+                }
+            }
+
+            .shipment-history-table{
+                margin-top: 0.6rem;
+                table{
+                    thead{
+                        padding-top: 0.5rem !important;
+                        padding-bottom: 0.9rem !important;
+                        background-color:rgba($color: $secondary, $alpha: 1.0);
+                        border-top-right-radius: 15px !important;
+                        border-top-left-radius: 15px !important;
+                        
+                        
+                        color: #fff;
+                        tr{
+                            
+                            th{
+                                border-right: 1px solid gray;
+                                text-transform: capitalize !important;
+                            }
+                        }
+                    }
+                    
+                    .tbody{
+                        margin-top: 2rem !important;
+
+                        tr{
+                            background-color: white;
+                            border-bottom:1px solid rgb(243, 243, 243);
+                            padding-left: 0.2rem;
+                            padding-right: 0.2rem;
+                            @extend .shadow-sm;
+
+                            th{
+                                font-weight: 550 !important;
+                            }
+                            td,th{
+                                font-size:0.91rem;
+                                padding-top: 1.5rem;
+                                padding-bottom: 1.5rem;
+                                font-family: 'Poppins', sans-serif;
+                                text-transform: capitalize !important;
+
+                            }
+
+                            td{
+                                
+                                a.btn-outline{
+                                    padding-top: 0.2rem;
+                                    padding-bottom: 0.2rem;
+                                    margin: 0 !important;
+                                    border:1px solid #c0bfbf;
+                                    font-size: 0.8rem;
+                                    @extend .shadow-sm;
+
+                                    &:hover
+                                    {
+                                        opacity: 0.4;
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .app-rig--wrapper{
+            .card{
+                background-color: transparent;
+                border-color: #eee !important;
+                .card-body{
+
+                    .shipment--inp{
+
+                        .input-gp{
+                            position: relative;
+                            input{
+                                border: none !important;
+                                padding-top: 0.9rem !important;
+                                padding-bottom: 0.9rem !important;
+                                padding-right: 6rem;
+                                font-weight: 300 !important;
+                                font-size: 0.9rem;
+                                font-family: 'Poppins', sans-serif;
+                                background-color: rgba($color: $white, $alpha: .8);
+                                border-radius: 10px;
+                            }
+
+                            button{
+                                position: absolute;
+                                top: 12%;
+                                right: 5%;
+                                padding-left: 1.5rem;
+                                padding-right: 1.2rem;
+                                padding-top: 0.5rem;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+
+                    .shipment--display{
+                        margin-top:1rem;
+                        background-color: white;
+                        .shipment--map{
+                            width: 100%;
+                            height: 200px;
+                            background-color: #f2f2f2;
+                            text-align: center;
+                            padding-top: 5rem;
+                            color: gray;
+                            border-bottom-left-radius: 15px;
+                            border-bottom-right-radius: 15px;
+                        }
+
+                        ._shiping-details{
+
+                            .shipping--location{
+                                padding:1.0rem 1.5rem 0.5rem 1.5rem;
+                                .loc-place{
+                                    color: #949292;
+                                    letter-spacing: 0.1px !important;
+                                    font-size: 0.9rem;
+                                    font-family: 'Poppins', sans-serif;
+
+                                }
+                            }
+
+                            .shipping--desc{
+
+                                padding:0rem 0.9rem 1.0rem 0.9rem !important;
+                                color: #949292;
+                                letter-spacing: 0.1px !important;
+                                font-size: 0.9rem;
+                            }
+
+                            .shipping--lis-div{
+
+                                .lis_ul{
+                                    padding:0rem 0.9rem 0rem 0.9rem !important;
+
+                                    list-style: none  !important;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    .lis-divider{
+                                        width: 10px;
+                                        height: 50px;
+                                        border-left: 1px solid #eee;
+                                    }
+
+                                    li{
+                                        
+                                        span{
+                                            color: #949292;
+                                            letter-spacing: 0.1px !important;
+                                            font-size: 0.9rem;
+                                            font-family: 'Poppins', sans-serif;
+                                        }
+                                        h5{
+                                            font-size: 1.0rem;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .view-shipment-action{
+                                padding:0rem 0.9rem 0.9rem 0.9rem !important;
+                                a{
+                                    width: 100%;
+                                    padding: 0.5rem;
+                                    @extend .shadow-sm;
+                                    border-radius: 15px;
+                                    color: $white;
+                                    background-color: #333;
+
+                                    &:hover{
+                                        opacity: 0.8;
+                                        color: whitesmoke;
+                                    }
+                                }
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}

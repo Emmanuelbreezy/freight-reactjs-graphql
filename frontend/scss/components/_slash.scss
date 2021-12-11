@@ -1,0 +1,15 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+.breadcumb-slash{
+    width: 5px;
+    height: 25px;
+    margin-left: 0.2rem;
+    margin-right: 0.7rem;
+    transform: rotate(22deg);
+    border-left: 1.5px solid #ece8e8;
+}
+
+.border-top{
+    border-top: 1px solid rgb(230, 228, 228) !important;
+}

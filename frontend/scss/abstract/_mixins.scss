@@ -1,0 +1,13 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/app-theme'  as *; 
+
+
+@mixin gradient {
+    background:linear-gradient(to top right, rgba($secondary, 0.90), rgba($primary,0.95));
+}
+
+//TRANSITION PROPERTY
+@mixin transitionProperty {
+    transition-duration: 1000ms;
+    transition-property: all;
+}
