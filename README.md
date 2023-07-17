@@ -1,4 +1,4 @@
-# Freight Fullstack Coding Challenge
+# Freight Coding Challenge
 
 Welcome to the Freight coding challenge
 
