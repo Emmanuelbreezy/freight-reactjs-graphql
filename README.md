@@ -1,66 +1,68 @@
-# FreightHub FullStack Coding Challenge - (Solution)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Welcome to the FreightHub frontend coding challenge! Please read the following instructions carefully.
+## Available Scripts
 
-**Your goal is to set up an application which enables the user to view and manage shipments.**
+In the project directory, you can run:
 
-# Contents
+### `npm start`
 
--   [Business need](#business-need)
--   [Use cases](#use-cases)
--   [Evaluation criteria](#evaluation-criteria)
-    -   [Technology requirements](#technology-requirements)
-    -   [Code requirements](Criteria.md#must-have)
--   [How to submit](#how-to-submit)
--   [How to run API server](#how-to-run-api-server)
--   [Time limit](#time-limit)
+Runs the app in the development mode.<br>
+Open [https://localhost:3000](https://localhost:3000) to view it in the browser.
 
-# Business need
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-The main goal is for the user to check the shipments at a glance. This allows users to take faster decisions and plan ahead of time.
+### `npm test`
 
-Providing information to the customer increases transparency and reduces communication issues.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Use cases
+### `npm run build`
 
-- The user shall be able to:
-  - See shipments in pages of 20 elements per page
-  - Search by shipment id
-  - Sort by different fields (e.g. id, name) in ascending/descending order
-  - View the shipment information on a separate shipment details page
-  - Update the shipment name (should persist when the page is reloaded)
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The interactions should not refresh the page.
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-# Evaluation criteria
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Technology requirements
+### `npm run eject`
 
-**React** and **JavaScript** are mandatory requirements. Apart from this, you can use any libraries, task runners and build processors. ES6 and TypeScript are highly encouraged.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Code requirements
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-The full criteria for evaluating the coding challenge can be found [here](./Criteria.md).
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-# How to submit
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- Clone this repository.
-- A RESTful API for `shipments` is provided with the challenge. To run, follow: [How to run API server](#how-to-run-api-server)
-- Create a new branch in your cloned implementation called `solution`.
-- Deploy on netlify or heroku. (Nice to have)
+## Learn More
 
-**In order to be fair to all candidates, please refrain from sharing your solution on public repository hosting services such as GitHub and Bitbucket.**
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-# How to run API server
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-The boilerplate includes a small service for data fetching. The file `db.json` includes all the necessary data to achieve the goal. Please follow the steps below to start the server:
+### Code Splitting
 
-```
-yarn or npm install .
-yarn server or npm run server
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-Check [json-server](https://github.com/typicode/json-server) for more information.
+### Analyzing the Bundle Size
 
-# Time limit
-7 days
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
